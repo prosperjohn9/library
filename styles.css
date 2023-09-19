@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightgrey;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#bookContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 12px;
+}
+#addBookButton {
+    padding: 6px 8px;
+    border-radius: 12px;
+    margin-left: 20px;
+    background: linear-gradient(#f2f7f5, #d3e7df);
+}
+#addBookModal {
+    display: none;
+    border: 2px solid black;
+    padding: 20px;
+    width: 400px;
+    margin: 20px;
+    border-radius: 12px;
+    background: linear-gradient(#f7f2f2, #e6d1d1);
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+input[type="text"],
+input[type="number"] {
+    width: 320px;
+    height: 32px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-left: 2px;
+    margin-right: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+#addBookForm button {
+    padding: 6px 8px;
+    border-radius: 12px;
+    background: linear-gradient(#f2f7f5, #d3e7df);
+}
+.card {
+    border: 2px solid black;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    line-height: 2;
+    background: linear-gradient(#f2f2f2, #d9d9d9);
+}
+.card h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card button {
+    padding: 6px 8px;
+    border-radius: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+.card .editButton{
+    width: 120px;
+    background: linear-gradient(#f2f7f5, #d3e7df);
+}
+.card .readStatusButton {
+    background: linear-gradient(#f2f2f7, #dad1e6);
+}
+.card .removeButton {
+    background: linear-gradient(#f7f2f2, #e6d1d1);
+    margin-left: 40px;
+}
+footer img {
+    width: 22px;
+    height: 22px;
+    margin-left: 4px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}

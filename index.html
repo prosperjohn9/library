@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <title>Book Library</title>
+</head>
+<body>
+    <h1>Book Library</h1>
+    <div id="bookContainer"></div>
+    <button id="addBookButton">Add New Book</button>
+    <div id="addBookModal">
+        <h2>ADD A NEW BOOK</h2>
+        <form id="addBookForm">
+            <label for="title">Title:</label>
+            <br>
+            <input type="text" id="title" name="title" required>
+            <br>
+            <label for="author">Author:</label>
+            <br>
+            <input type="text" id="author" name="author" required>
+            <br>
+            <label for="pages">Number of Pages:</label>
+            <br>
+            <input type="number" id="pages" name="pages" required>
+            <br>
+            <label>Have you read it?</label>
+            <br>
+            <div class="checkbox">
+                <label for="readYes">Yes</label>
+                <input type="checkbox" id="readYes" name="read" value="Yes">
+                <label for="readNo">No</label>
+                <input type="checkbox" id="readNo" name="read" value="No">
+                <br>
+            </div>
+            <button type="submit">Add Book To Library</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2023 by ProsperJohn9 <a href="https://github.com/prosperjohn9"><img src="./images/github.svg" alt="github"></a>. All rights reserved.
+    </footer>
+</body>
+</html>
