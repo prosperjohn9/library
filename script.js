@@ -8,6 +8,11 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
+// Add a method to the Book prototype to change read status
+Book.prototype.changeReadStatus = function() {
+    this.read = !this.read;
+}
+
 // Function to add a book to the library
 function addBookToLibrary(title, author, pages, read) {
     const newBook = new Book(title, author, pages, read);
@@ -64,7 +69,7 @@ function handleFormSubmit(event) {
 // Function to toggle the add book modal
 function toggleModal() {
     const modal = document.getElementById("addBookModal");
-    modal.style.display = modal.style.display === "none" ? "block" : "none";
+    modal.style.display = modal.style.display === "block" ? "none" : "block";
 }
 
 // Function to remove a book from the library
@@ -90,6 +95,7 @@ document.getElementById("bookContainer").addEventListener("click", function (eve
         changeReadStatus(index);
     }
 });
+
 
 // Function to edit a book
 function editBook(index) {
