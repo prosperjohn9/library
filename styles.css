@@ -5,6 +5,7 @@
 }
 body {
     background-color: lightgrey;
+    color: black;
 }
 h1 {
     display: flex;
@@ -31,6 +32,9 @@ h1 {
     margin: 20px;
     border-radius: 12px;
     background: linear-gradient(#f7f2f2, #e6d1d1);
+}
+#addBookModal button {
+    color: black;
 }
 h2 {
     display: flex;
