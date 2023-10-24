@@ -1,17 +1,21 @@
 const library = []; // Array to store book objects
 
-// Book Constructor
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+// Book Class
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+
+    // Add a method to the Book prototype to change read status
+    changeReadStatus() {
+        this.read = !this.read;
+    }
 }
 
-// Add a method to the Book prototype to change read status
-Book.prototype.changeReadStatus = function() {
-    this.read = !this.read;
-}
 
 // Function to add a book to the library
 function addBookToLibrary(title, author, pages, read) {
